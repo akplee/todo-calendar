@@ -1,0 +1,173 @@
+.login-registration-001.active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #345995;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.login-registration-001{
+  visibility: hidden;
+  transform: scale(0);
+}
+
+.login-registration-001 .container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+.login-registration-001 .container .bg-1 {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+}
+.login-registration-001 .container .bg-1 .box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-registration-001 .container .bg-1 .box h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.login-registration-001 .container .bg-1 .box button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+}
+.login-registration-001 .container .formBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 100;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+.login-registration-001 .container .formBox .form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  transition: 0.3s;
+}
+.login-registration-001 .container .formBox .form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-registration-001 .container .formBox .form form h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+.login-registration-001 .container .formBox .form form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.login-registration-001 .container .formBox .form form input[type=submit] {
+  background-color: #345995;
+  border: none;
+  color: #fff;
+  max-width: 100px;
+  cursor: pointer;
+}
+.login-registration-001 .container .formBox .form form a {
+  color: #333;
+}
+.login-registration-001 .container .formBox .signinForm {
+  transition-delay: 0.15s;
+}
+.login-registration-001 .container .formBox .signupForm {
+  left: 100%;
+  transition-delay: 0s;
+}
+.login-registration-001 .container .formBox.active {
+  left: 50%;
+}
+.login-registration-001 .container .formBox.active .signinForm {
+  left: -100%;
+  transition-delay: 0s;
+}
+.login-registration-001 .container .formBox.active .signupForm {
+  left: 0;
+  transition-delay: 0.15s;
+}
+.login-registration-001 .container .formBox.active .signupForm input[type=submit] {
+  background-color: #03CEA4;
+}
+
+.login-registration-001.color {
+  background-color: #03CEA4;
+
+}
+
+@media (max-width: 991px) {
+  .login-registration-001 .container {
+    max-width: 400px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-registration-001 .container .bg-1 {
+    top: 0;
+    height: 100%;
+  }
+  .login-registration-001 .container .bg-1 .box {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+  }
+  .login-registration-001 .container .bg-1 .signin {
+    top: 0;
+  }
+  .login-registration-001 .container .formBox {
+    width: 100%;
+    height: 500px;
+    top: 0;
+    box-shadow: none;
+  }
+  .login-registration-001 .container .formBox.active {
+    left: 0;
+    top: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */
